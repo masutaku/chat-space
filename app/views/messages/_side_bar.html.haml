@@ -1,0 +1,18 @@
+.side-ber
+  .side-header
+    .side-header__items
+      %p.side-header__items__name
+        masu
+      %ul.side-header__items__icon
+        %li.side-header__items__edit-user
+          = link_to '#' do
+            = icon('fas', 'edit')
+        %li.side-header__items__new-group
+          = link_to '#' do
+            = icon('fas', 'cog')
+  .groups
+    = link_to '#', class:"group" do
+      %p.group__group-name
+        test
+      %p.group__latest-message
+        まだメッセージがありません
