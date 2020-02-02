@@ -1,0 +1,33 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group
+        masu
+      %ul.main-header__left-box__member-list
+        Member：
+        %li.main-header__left-box__member-list__member masu
+    = link_to '#' do
+      .main-header__edit-btn Edit
+
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker masu
+        %p.message__upper-info__date 2020/02/01(Sat) 13:22:25
+      %p.message__text test
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker masu
+        %p.message__upper-info__date 2020/02/01(Sat) 13:22:35
+      %p.message__text test
+
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
+
+
